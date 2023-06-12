@@ -1,0 +1,19 @@
+#Example command line for converting fastq files to counts_matrix.txt
+
+#Packages used (fastp, hisat2, samtools, subread)
+
+#sample input 1, use fastp for trimming 2 reads
+cray_minor@Crays-MacBook-Pro miniconda3 % fastp -i R1.fq.gz -I R2.fq.gz -o trimmed_R1.fastq.gz -O trimmed_R2.fastq.gz
+
+#sample input 2, use hisat2 to align reads create .sam file
+#this step takes a while, .sam becomes very large
+cray_minor@Crays-MacBook-Pro miniconda3 % hisat2 -x reference_genome_index -1 trimmed_R1.fastq.gz -2 trimmed_R2.fastq.gz -S aligned_reads_1.sam
+
+#sample input 3, aligned reads .bam file
+cray_minor@Crays-MacBook-Pro miniconda3 % samtools view -bS aligned_reads_1.sam > aligned_reads_1.bam
+
+#sample input 4, samtools to sort .bam
+cray_minor@Crays-MacBook-Pro miniconda3 % samtools sort aligned_reads_1.bam -o sorted_aligned_reads_1.bam
+
+#sample input 5, -p paired ends, -B make sure its read pairs even in single bam file, Mus_musculus reference genome
+cray_minor@Crays-MacBook-Pro miniconda3 % featureCounts -a Mus_musculus.GRCm39.109.chr.gtf.gz -o counts_matrix_1.txt -p -B -C sorted_aligned_reads_1.bam
