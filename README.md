@@ -16,19 +16,30 @@ Packages used for preprocessing fastq files to make count matricies
 FASTQ file format input ex.)
 
 1 - Identifier ("@XXXX....."
+
 2 - Sequence  ("ATGCGCGCATATATTTTGGCGCGTATGAGAC"
+
 3 - '+'
+
 4 - Quality scores (phred encoded, represents confidence in correct base pair read)
+
 
 featurecounts matrix outpur ex.)
 
 Index - 'Geneid'
+
 Column 1 - Chromosome annotation
+
 Column 2 - Start gene read position
+
 Column 3 - End gene read position
+
 Column 4 - Strand annotation
+
 Column 5 - Gene length
+
 Column 6 - sorted_read.bam file annotation
+
 
 ### Explanation of packages used
 fastp: Fastp is a tool for comprehensive quality control and preprocessing of fastq files. It performs tasks such as adapter trimming, quality filtering, read
