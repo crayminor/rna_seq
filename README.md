@@ -29,6 +29,15 @@ featurecounts matrix outpur ex.)
 - Column 5: Gene length
 - Column 6: sorted_read.bam file annotation
 
+Questions to answer in report
+- Interestingness of the problem you are studying. (10 points).
+- How challenging and large is the dataset you are studying? (10 points)
+- Any aspects that are new in terms of algorithm development, uniqueness of the data, or new applications? (20 points)
+- Is your experimental design comprehensive? Have you done thoroughly experiments in tuning hyper parameters? (30 points)
+- Is your report written in a professional way with sections including abstract, introduction, method/architecture description, experiments ( data and problem description, hyper-parameters, training process etc.), conclusion, and references? (30 points)
+- Bonus points will be assigned to projects that have adopted new methods, worked on novel applications, and/or have done a thorough comparison against the existing methods and possible choices.
+
+###Outline
 
 Abstract:
 - Highlight the interesting aspects of your problem and its potential impact (Question 1).
@@ -48,12 +57,13 @@ Experiments:
 Conclusion:
 - Summarize the key findings and their relevance to the problem studied (Question 1).
 - Reflect on the strengths and limitations of your analysis (Question 4).
-Discuss future directions and potential applications of your work (Question 6).
-References:
+- Discuss future directions and potential applications of your work (Question 6).
 
-Include a comprehensive list of references used in your report.
+References:
+- Include a comprehensive list of references used in your report.
 
 ### Explanation of packages used
+
 fastp: Fastp is a tool for comprehensive quality control and preprocessing of fastq files. It performs tasks such as adapter trimming, quality filtering, read
 trimming, and read length filtering. Fastp helps to ensure that the input fastq files are of high quality and suitable for downstream analysis.
 
