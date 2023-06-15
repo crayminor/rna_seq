@@ -61,6 +61,12 @@ Conclusion:
 
 References:
 - Include a comprehensive list of references used in your report.
+- TPM calc: https://github.com/lucynwosu/TPM-Transcripts-Per-Million-Normalization-Python/blob/main/TPM-Transcripts-Per-Million-Normalization.ipynb
+- pydeseq2 syntax help: https://github.com/mousepixels/sanbomics_scripts/blob/main/PyDeseq2_DE_tutorial.ipynb
+- fastp: 1) Shifu Chen. 2023. Ultrafast one-pass FASTQ data preprocessing, quality control, and deduplication using fastp. iMeta 2: e107. https://doi.org/10.1002/imt2.107; 2) Shifu Chen, Yanqing Zhou, Yaru Chen, Jia Gu; fastp: an ultra-fast all-in-one FASTQ preprocessor, Bioinformatics, Volume 34, Issue 17, 1 September 2018, Pages i884–i890, https://doi.org/10.1093/bioinformatics/bty560
+- samtools: Twelve years of SAMtools and BCFtools, Petr Danecek, James K Bonfield, Jennifer Liddle, John Marshall, Valeriu Ohan, Martin O Pollard, Andrew Whitwham, Thomas Keane, Shane A McCarthy, Robert M Davies, Heng Li (GigaScience, Volume 10, Issue 2, February 2021, giab008)  https://doi.org/10.1093/gigascience/giab008
+- hisat2: https://daehwankimlab.github.io/hisat2/
+- subread: Liao, Y., Smyth, G. K., & Shi, W. (2013). The Subread aligner: fast, accurate and scalable read mapping by seed-and-vote. Nucleic acids research, 41(10), e108. https://doi.org/10.1093/nar/gkt214
 
 ### Explanation of packages used
 
