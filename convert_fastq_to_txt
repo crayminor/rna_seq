@@ -3,7 +3,7 @@
 #Packages used (fastp, hisat2, samtools, subread)
 
 #sample input 1, use fastp for trimming 2 reads
-User@User-MacBook-Pro miniconda3 % fastp -i paired_read_R1.fastq.gz -I paired_read_R2.fastq.gz -o trimmed_R1.fastq.gz -O trimmed_R2.fastq.gz
+User@User-MacBook-Pro miniconda3 % fastp -i paired_read_R1.fastq.gz -I paired_read_R2.fastq.gz -o trimmed_R1.fastq.gz -O trimmed_R2.fastq.gz --detect_adapter_for_pe
 
 #sample input 2, use hisat2 to align reads create .sam file
 #this step takes a while, .sam becomes very large, make sure you have enough computer space becomes ~10 original fastq file size
