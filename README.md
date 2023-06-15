@@ -30,6 +30,29 @@ featurecounts matrix outpur ex.)
 - Column 6: sorted_read.bam file annotation
 
 
+Abstract:
+- Highlight the interesting aspects of your problem and its potential impact (Question 1).
+Introduction:
+- Provide background information on RNA sequencing and its applications (Question 3).
+Describe the uniqueness of your dataset and its relevance to your research (Question 3).
+
+Methods:
+- Explain the experimental design and data collection process, highlighting the challenges of working with a large dataset (Question 2).
+- Describe the preprocessing steps and the specific tools used, emphasizing their relevance and ease of use for beginners (Question 6).
+
+Experiments:
+- Discuss the comprehensiveness of your experimental design, including the tuning of hyperparameters (Question 4).
+- Present the results of differential expression analysis, highlighting any novel findings (Question 3).
+- Showcase visualizations, such as PCA plots, to demonstrate the quality and validity of your analysis (Question 5).
+
+Conclusion:
+- Summarize the key findings and their relevance to the problem studied (Question 1).
+- Reflect on the strengths and limitations of your analysis (Question 4).
+Discuss future directions and potential applications of your work (Question 6).
+References:
+
+Include a comprehensive list of references used in your report.
+
 ### Explanation of packages used
 fastp: Fastp is a tool for comprehensive quality control and preprocessing of fastq files. It performs tasks such as adapter trimming, quality filtering, read
 trimming, and read length filtering. Fastp helps to ensure that the input fastq files are of high quality and suitable for downstream analysis.
