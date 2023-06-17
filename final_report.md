@@ -74,3 +74,10 @@ feature and each column represents a sample.
 - samtools: Twelve years of SAMtools and BCFtools, Petr Danecek, James K Bonfield, Jennifer Liddle, John Marshall, Valeriu Ohan, Martin O Pollard, Andrew Whitwham, Thomas Keane, Shane A McCarthy, Robert M Davies, Heng Li (GigaScience, Volume 10, Issue 2, February 2021, giab008)  https://doi.org/10.1093/gigascience/giab008
 - hisat2: https://daehwankimlab.github.io/hisat2/
 - subread: Liao, Y., Smyth, G. K., & Shi, W. (2013). The Subread aligner: fast, accurate and scalable read mapping by seed-and-vote. Nucleic acids research, 41(10), e108. https://doi.org/10.1093/nar/gkt214
+- pydeseq2: @article{muzellec2022pydeseq2,
+title={PyDESeq2: a python package for bulk RNA-seq differential expression analysis},
+author={Muzellec, Boris and Telenczuk, Maria and Cabeli, Vincent and Andreux, Mathieu},
+year={2022},
+doi = {10.1101/2022.12.14.520412},
+journal={bioRxiv},
+}
