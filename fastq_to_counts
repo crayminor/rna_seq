@@ -1,5 +1,19 @@
 #Example command line for converting fastq files to counts_matrix.txt
 
+FASTQ file format input ex.)
+- Identifier ("@XXXX.....")
+- Sequence  ("ATGCGCGCATATATTTTGGCGCGTATGAGAC"
+- Place holder ('+')
+- Quality scores (ASCII encoded values, phred qualities that represents confidence in correct base pair read)
+
+featurecounts matrix outpur ex.)
+- Index: 'Geneid'
+- Column 1: Chromosome annotation
+- Column 2: Start gene read position
+- Column 3: End gene read position
+- Column 4: Strand annotation
+- Column 5: Gene length
+- Column 6: sorted_read.bam file annotation
 
 #Packages used (fastp, hisat2, samtools, subread) 
 #Recommended: (install packages in miniconda env.)
