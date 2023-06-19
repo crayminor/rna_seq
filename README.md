@@ -1,4 +1,5 @@
-# RNA sequencing
+# RNA Sequencing Pipeline: From FASTQ to DEA
+
 Adv. Machine Learning Methods Final Project RNA Seq
 
 Option (5): A topic of your own about visual, acoustic, language and other data modeling using modern deep learning techniques including convolutional neural networks, recurrent neural networks, auto-encoder etc. You can look for interesting topics on recent NeurIPS, CVPR, ICLR, ICCV, ACL, AAAI, etc.
