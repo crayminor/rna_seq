@@ -1,19 +1,26 @@
 #Example command line for converting fastq files to counts_matrix.txt
 
-#Packages used (fastp, hisat2, samtools, subread)
+#Packages used (fastp, hisat2, samtools, subread) 
+#Recommended: (install packages in miniconda env.)
+
 
 #sample input 1, use fastp for trimming 2 reads
-User@User-MacBook-Pro miniconda3 % fastp -i paired_read_R1.fastq.gz -I paired_read_R2.fastq.gz -o trimmed_R1.fastq.gz -O trimmed_R2.fastq.gz --detect_adapter_for_pe
+User@User-MacBook-Pro miniconda3 % fastp -i paired_read_1.fastq.gz -I paired_read_2.fastq.gz -o trimmed_R1.fastq.gz -O trimmed_R2.fastq.gz --detect_adapter_for_pe
+
 
 #sample input 2, use hisat2 to align reads create .sam file
-#this step takes a while, .sam becomes very large, make sure you have enough computer space becomes ~10 original fastq file size
+#this step takes a while (.sam becomes very large, make sure you have enough computer space becomes ~10 original fastq file size)
+#download reference genome and annotated reads from hisat2
 User@User-MacBook-Pro miniconda3 % hisat2 -x reference_genome_index -1 trimmed_R1.fastq.gz -2 trimmed_R2.fastq.gz -S aligned_reads_1.sam
+
 
 #sample input 3, aligned reads .bam file
 User@User-MacBook-Pro miniconda3 % samtools view -bS aligned_reads_1.sam > aligned_reads_1.bam
 
+
 #sample input 4, samtools to sort .bam
 User@User-MacBook-Pro miniconda3 % samtools sort aligned_reads_1.bam -o sorted_aligned_reads_1.bam
 
-#sample input 5, -p paired ends, -B make sure its read pairs even in single bam file, Mus_musculus reference genome
+
+#sample input 5, -p paired ends, -B make sure its read pairs even in single bam file, Mus_musculus reference genome (downloaded from hisat2)
 User@User-MacBook-Pro miniconda3 % featureCounts -a Mus_musculus.GRCm39.109.chr.gtf.gz -o counts_matrix_1.txt -p -B -C sorted_aligned_reads_1.bam
