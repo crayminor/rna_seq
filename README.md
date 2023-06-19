@@ -13,13 +13,24 @@ Goals:
 - Differential expression, PCA, and GSEA heatmaps
 - Apply auto-encoder for sample prediciton based on genetic expression profiles
 
-Packages used for preprocessing fastq files to make count matricies
+Packages used for command line preprocessing:
+- fastp
+- hisat2
+- samtools
+- subread
+
+Packages used for DEA:
+- pyDESeq2
+- matplotlib
+- scanpy
+- sklearn
+- tensorflow, keras
 
 FASTQ file format input ex.)
-- 1) Identifier ("@XXXX.....")
-- 2) Sequence  ("ATGCGCGCATATATTTTGGCGCGTATGAGAC"
-- 3) Place holder ('+')
-- 4) Quality scores (ASCII encoded, phred qualities that represents confidence in correct base pair read)
+- Identifier ("@XXXX.....")
+- Sequence  ("ATGCGCGCATATATTTTGGCGCGTATGAGAC"
+- Place holder ('+')
+- Quality scores (ASCII encoded values, phred qualities that represents confidence in correct base pair read)
 
 
 featurecounts matrix outpur ex.)
