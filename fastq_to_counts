@@ -1,5 +1,6 @@
 #Example command line for converting fastq files to counts_matrix.txt
 
+
 #Packages used (fastp, hisat2, samtools, subread) 
 #Recommended: (install packages in miniconda env.)
 
